@@ -1,0 +1,44 @@
+ @font-face {
+     font-family: 'Gilroy ExtraBold';
+     src: local('Gilroy ExtraBold'), local('Gilroy ExtraBold'), url('fonts/gilroyextrabold.woff') format('woff'), url('fonts/gilroyextrabold.woff2') format('woff2');
+     font-weight: bold;
+ }
+ 
+ body {
+     min-width: 1200px;
+     margin: 0;
+     padding: 0;
+     font-family: "Arial", sans-serif;
+     background-color: white;
+ }
+ 
+ .container {
+     width: 1200px;
+     margin: 0 auto;
+     padding: 0 20px;
+     /* background-color: red; */
+     box-sizing: border-box;
+ }
+ 
+ header {
+     padding: 0px 60px 40px 60px;
+     background-image: linear-gradient(white 30px, #f7e296 30px);
+ }
+ 
+ .logo-wrapper {
+     margin-top: 10px;
+     padding: 0px;
+ }
+ 
+ .logo {
+     margin: 0px;
+     text-transform: uppercase;
+     font-family: "Gilroy ExtraBold", serif;
+     font-size: 48px;
+     text-decoration: none;
+     color: black;
+     letter-spacing: 0.5px;
+     position: relative;
+     left: -2px;
+     font-weight: bold;
+ }
