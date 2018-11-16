@@ -167,21 +167,26 @@
         z-index: 2;
     }
     
-    .search,
-    .user {
-        float: left;
-    }
-    
-    .compare,
-    .cart {
-        float: right;
-    }
-    
     .header-bottom {
-        clear: both;
         display: flex;
     }
     
     .header-catalog-menu {
         display: flex;
+    }
+    
+    .header-top {
+        display: flex;
+    }
+    
+    .site-navigation {
+        display: flex;
+    }
+    
+    .header-catalog-menu ul li {
+        font-family: "Open Sans", sans-serif;
+        font-weight: ligter;
+        font-size: 15px;
+        line-height: 36px;
+        /*  ? */
     }
