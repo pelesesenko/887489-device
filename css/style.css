@@ -22,12 +22,24 @@
         font-weight: 400;
     }
     
+    .visually-hidden {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        clip: rect(0 0 0 0);
+        overflow: hidden;
+    }
+    
     body {
         min-width: 1200px;
         margin: 0;
         padding: 0;
         font-family: "Open Sans", "Arial", sans-serif;
         background-color: white;
+        overflow-x: hidden;
     }
     
     li {
@@ -189,4 +201,78 @@
         font-size: 15px;
         line-height: 36px;
         /*  ? */
+    }
+    
+    .product-categories {
+        margin-bottom: 80px;
+    }
+    
+    .categories-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .category-icon {
+        width: 160px;
+        height: 160px;
+        background-color: #f7e296;
+    }
+    
+    .categories-list li:nth-child(n-1) {
+        margin-right: 40px;
+    }
+    /* Сервисы .................................................................................*/
+    
+    .wide-background {
+        background-image: linear-gradient(white 95px, #e5e5e5 95px);
+        width: 100%;
+    }
+    
+    .services-container {
+        display: flex;
+    }
+    
+    .services-control {
+        display: flex;
+        flex-direction: column;
+        padding: 55px 120px 45px 0px;
+        border-right: 5px solid #000000;
+        margin-bottom: 70px;
+    }
+    
+    .services-control label {
+        margin: 25px 0;
+    }
+    
+    .services-container input {
+        display: none;
+    }
+    
+    .services-description {
+        position: absolute;
+        display: none;
+    }
+    
+    .services-container #btn-1:checked~.services-description-window .services-description-1 {
+        display: block;
+    }
+    
+    .services-container #btn-2:checked~.services-description-window .services-description-2 {
+        display: block;
+    }
+    
+    .services-container #btn-3:checked~.services-description-window .services-description-3 {
+        display: block;
+    }
+    /* Бренды ...................................................................................*/
+    
+    .brands-list {
+        display: flex;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .info {
+        display: flex;
     }
