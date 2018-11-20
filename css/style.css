@@ -38,7 +38,7 @@
         margin: 0;
         padding: 0;
         font-family: "Open Sans", "Arial", sans-serif;
-        background-color: white;
+        background-color: #ffffff;
     }
     
     li {
@@ -48,6 +48,18 @@
     a {
         text-decoration: none;
         color: #000000;
+    }
+    
+    .btn {
+        font-family: "Gilroy", serif;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        display: inline-block;
+        padding: 9px 43px;
+        margin: 12px 0;
     }
     
     .container {
@@ -62,7 +74,7 @@
         padding: 10px 60px 0 60px;
         margin: 0 auto;
         box-sizing: border-box;
-        background-image: linear-gradient(white 40px, #f7e296 40px);
+        background-image: linear-gradient(#ffffff 40px, #f7e296 40px);
     }
     
     .logo-wrapper {
@@ -253,10 +265,6 @@
         color: rgba(0, 0, 0, 0.5);
         padding-left: 20px;
     }
-    /* .header-bottom {
-        display: flex;
-    }
-     */
     /* Навигация в хедере ......................................................*/
     
     .main-navigation {
@@ -276,6 +284,7 @@
     .header-catalog-menu {
         order: 1;
         display: flex;
+        background-color: #f7e296;
         font-family: "Open Sans", sans-serif;
         font-weight: 400;
         font-size: 15px;
@@ -290,6 +299,7 @@
         padding-top: 18px;
         padding-left: 60px;
         visibility: hidden;
+        z-index: 10;
     }
     
     .header-catalog-menu ul:first-child {
@@ -327,7 +337,6 @@
     .main-navigation-item:nth-child(1) {
         margin: 0 auto 0 0;
         min-width: 246px;
-        /* position: relative; */
     }
     
     .main-navigation>.main-navigation-item:last-child {
@@ -352,6 +361,182 @@
     .last-char {
         letter-spacing: 0;
     }
+    /* Слайдер ...........................................................................................*/
+    
+    .slider {}
+    
+    .slide {
+        display: flex;
+        /* flex-wrap: wrap;
+        flex-direction: column; */
+        max-height: 498px;
+        position: relative;
+        width: 100%;
+    }
+    
+    .slide img {
+        order: -1;
+    }
+    
+    .slide .description {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        max-width: 560px;
+        padding-top: 79px;
+    }
+    
+    .slide .description span {
+        font-family: "Gilroy", serif;
+        font-size: 179.2px;
+        line-height: 179.2px;
+        font-weight: bold;
+        letter-spacing: 0.01em;
+        color: #ffffff;
+        position: absolute;
+        top: -15px;
+        right: 46px;
+    }
+    
+    .slide .description strong {
+        font-family: "Gilroy", serif;
+        font-size: 47px;
+        line-height: 56px;
+        font-weight: bold;
+        letter-spacing: 0.01em;
+        margin-bottom: 4px;
+        display: inline-block;
+    }
+    
+    .slide .description p {
+        font-size: 15px;
+        line-height: 30px;
+        font-weight: 400;
+        letter-spacing: -0.01em;
+        padding-right: 70px;
+    }
+    
+    .slide .description .btn {
+        margin: 27px 20px 40px 0;
+    }
+    
+    .slide .description table {
+        border-spacing: 0;
+        padding-bottom: 8px;
+        width: 425px;
+        /* margin-right: 18px; */
+    }
+    
+    .slide .description table tr td:nth-child(1) {
+        padding-right: 10px;
+    }
+    
+    .slide .description table tr td:nth-child(2) {
+        padding-right: 20px;
+    }
+    
+    .slide .description table tr:last-child {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: -0.02em;
+    }
+    
+    .slide .description table tr:first-child {
+        font-family: "Gilroy";
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 48px;
+    }
+    
+    .slide td {
+        padding: 8px 0 0 0;
+        border: 1px solid black;
+    }
+    /* .Подробнее {
+      font-size: 10.769px;
+      font-family: "Gilroy";
+      color: rgb(0, 0, 0);
+      font-weight: bold;
+      text-transform: uppercase;
+      line-height: 1.333;
+      text-align: center;
+      -moz-transform: matrix( 1.67150935960583,0,0,1.67150935960583,0,0);
+      -webkit-transform: matrix( 1.67150935960583,0,0,1.67150935960583,0,0);
+      -ms-transform: matrix( 1.67150935960583,0,0,1.67150935960583,0,0);
+      position: absolute;
+      left: 810.16px;
+      top: 569.263px;
+      z-index: 155;
+    } */
+    
+    .slider-window {
+        position: relative;
+        width: 1129px;
+        height: 498px;
+        left: 31px;
+        top: -111px;
+        overflow: hidden;
+        /* background-color: red; */
+    }
+    
+    .slider-cage {
+        display: flex;
+        width: 300%;
+    }
+    
+    .slide-1 img {
+        margin: 0 126px 0 59px;
+    }
+    
+    .slider-window input {
+        display: none;
+    }
+    
+    .slider-controls {
+        position: relative;
+    }
+    
+    .slider-controls label::after {
+        content: "";
+        position: absolute;
+        width: 12px;
+        height: 12px;
+        background-image: url("../img/slider-button-empty.svg");
+        left: 1004px;
+        top: 330px;
+        z-index: 20;
+        cursor: pointer;
+    }
+    
+    .slider-controls label:first-child::after {
+        transform: translateX(-33px);
+    }
+    
+    .slider-controls label:last-child::after {
+        transform: translateX(33px);
+    }
+    
+    #btn-1-slider:checked~.slider-controls label[for="btn-1-slider"]::after,
+    #btn-2-slider:checked~.slider-controls label[for="btn-2-slider"]::after,
+    #btn-3-slider:checked~.slider-controls label[for="btn-3-slider"]::after {
+        background-image: url("../img/slider-button.svg");
+    }
+    
+    #btn-1-slider:checked~.slider-cage {
+        transform: translateX(0px);
+    }
+    
+    #btn-2-slider:checked~.slider-cage {
+        transform: translateX(-1129px);
+    }
+    
+    #btn-3-slider:checked~.slider-cage {
+        transform: translateX(-2258px);
+    }
+    /* Категории ........................................................................................*/
     
     .product-categories {
         margin-bottom: 80px;
@@ -375,7 +560,7 @@
     /* Сервисы .................................................................................*/
     
     .wide-background {
-        background-image: linear-gradient(white 95px, #e5e5e5 95px);
+        background-image: linear-gradient(#ffffff 95px, #e5e5e5 95px);
         width: 100%;
     }
     
