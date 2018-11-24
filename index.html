@@ -253,9 +253,27 @@
                 <div class="map">
                     <img src="img/map.jpg" width="560" height="222" alt="Карта офиса по адресу улица Строителей, 15">
                 </div>
-                <div class="modal map-modal"></div>
+                <section class="modal modal-map">
+                    <h2 class="visually-hidden">
+                        Как до нас добраться
+                    </h2>
+                    <p>
+                        <img src="img/map-big.jpg" width="994" height="593" alt="Офис компании по адресу ул. Строителей, 15">
+                    </p>
+                    <button class="modal-close" type="button">
+                      Закрыть
+                    </button></section>
                 <a class="btn" href="#">Напишите нам</a>
-                <div class="modal feedback-modal"></div>
+                <section class="modal feedback-modal">
+                    <h3>Обратная связь</h3>
+                    <form action="#" method="POST">
+                        <label>Ваше имя:<input type="text" placeholder="Имя и фамилия" ></label>
+                        <label>Ваш email:<input type="text" placeholder="email@example.com" ></label>
+                        <label><textarea name="mail-text" id="mail-text" cols="30" rows="10">В свободной форме</textarea></label>
+                        <button class="btn" type="submit">Отправить</button>
+                        <button class="modal-close" type="button"><span class="visually-hidden" >Закрыть</span></button>
+                    </form>
+                </section>
             </section>
         </div>
         <footer>

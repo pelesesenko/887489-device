@@ -374,8 +374,8 @@
             position: absolute;
             top: 552px;
             left: 1399px;
-            box-sizing: content-box;
-            border: 3px solid #fffffff;
+            /* box-sizing: content-box;
+            border: 3px solid #ffffff; */
         }
         
         #btn-1-slider {
@@ -741,7 +741,6 @@
         .social-btns .twi a::before {
             background-image: url("../img/twitter.svg");
         }
-        /* Catalog IIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIIII */
         
         .item-card {
             display: flex;
