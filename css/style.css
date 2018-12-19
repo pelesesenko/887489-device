@@ -223,7 +223,7 @@
     .feedback-modal label {
         display: inline-block;
         vertical-align: middle;
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 18px;
         line-height: 24px;
         font-weight: bold;
@@ -237,7 +237,7 @@
     .feedback-modal input,
     .feedback-modal textarea {
         display: block;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Open Sans", "Arial", sans-serif;
         font-size: 14px;
         line-height: 18px;
         font-weight: normal;
@@ -303,7 +303,7 @@
     .btn {
         -webkit-box-sizing: border-box;
         box-sizing: border-box;
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 18px;
         line-height: 24px;
         font-weight: bold;
@@ -384,7 +384,7 @@
         display: flex;
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Open Sans", "Arial", sans-serif;
         font-weight: 400;
         font-size: 15px;
         -webkit-box-pack: justify;
@@ -406,7 +406,7 @@
     
     .search input,
     .search .btn-search {
-        font-family: "Open Sans", sans-serif;
+        font-family: "Open Sans", "Arial", sans-serif;
         font-weight: 400;
         font-size: 15px;
         line-height: 30px;
@@ -518,6 +518,8 @@
         display: inline-block;
         margin-right: 11px;
         background-repeat: no-repeat;
+        vertical-align: top;
+        margin-top: 2px;
     }
     
     .header-top .user::before {
@@ -531,6 +533,7 @@
         width: 10px;
         height: 10px;
         background-image: url("../img/compare.svg");
+        margin-top: 4px;
     }
     
     .header-top .cart::before {
@@ -595,7 +598,7 @@
         display: -ms-flexbox;
         display: flex;
         background-color: #f7e296;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Open Sans", "Arial", sans-serif;
         font-weight: 400;
         font-size: 15px;
         line-height: 36px;
@@ -629,7 +632,7 @@
     }
     
     .main-navigation-item {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 18px;
         line-height: 24px;
         font-weight: bold;
@@ -701,17 +704,19 @@
     
     .slider-controls {
         position: absolute;
-        top: 326px;
+        top: 324px;
         left: 999px;
     }
     
     .slider-controls label::after {
         content: "";
         display: inline-block;
+        vertical-align: middle;
         width: 12px;
         height: 12px;
         background-image: url("../img/slider-button-empty.svg");
         background-color: #ffffff;
+        box-shadow: #ffffff 0 0 1px 2px;
         border-radius: 50%;
         cursor: pointer;
         margin-right: 17px;
@@ -729,7 +734,7 @@
     .btn-2-slider:focus~.slider-controls label[for="btn-2-slider"]::after,
     .btn-3-slider:focus~.slider-controls label[for="btn-3-slider"]::after {
         -webkit-box-shadow: #f7e296 0 0 1px 2px;
-        box-shadow: #f7e296 0 0 1px 2px;
+        box-shadow: #ffffff 0 0 1px 2px, #f7e296 0 0 1px 4px;
     }
     
     .btn-1-slider:checked~.slide-1,
@@ -791,7 +796,7 @@
     }
     
     .slide-description .number {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 179.2px;
         line-height: 179.2px;
         font-weight: bold;
@@ -803,7 +808,7 @@
     }
     
     .slide-description strong {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 47px;
         line-height: 56px;
         font-weight: bold;
@@ -853,7 +858,7 @@
     }
     
     .slide-description tr:first-child {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-weight: 400;
         font-size: 36px;
         line-height: 48px;
@@ -861,7 +866,7 @@
     }
     
     .slide-description tr:last-child {
-        font-family: "Open Sans", sans-serif;
+        font-family: "Open Sans", "Arial", sans-serif;
         font-weight: 400;
         font-size: 13px;
         line-height: 20px;
@@ -962,7 +967,7 @@
     }
     
     .categories-list b {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-weight: bold;
         font-size: 18px;
         line-height: 24px;
@@ -1038,7 +1043,7 @@
     }
     
     .services-description {
-        position: absolute;
+        position: relative;
         display: none;
         padding: 73px 300px 0 118px;
     }
@@ -1048,7 +1053,7 @@
     }
     
     .services-description h3 {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 47px;
         line-height: 48px;
         margin: 0 0 31px 0;
@@ -1056,7 +1061,7 @@
     }
     
     .services-description p {
-        font-family: "Open Sans", sans-serif;
+        font-family: "Open Sans", "Arial", sans-serif;
         font-weight: 400;
         font-size: 15px;
         line-height: 30px;
@@ -1178,7 +1183,7 @@
     }
     
     .info h2 {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 47px;
         line-height: 48px;
         font-weight: bold;
@@ -1187,7 +1192,7 @@
     }
     
     .info p {
-        font-family: "Open Sans", sans-serif;
+        font-family: "Open Sans", "Arial", sans-serif;
         font-weight: 400;
         font-size: 15px;
         line-height: 30px;
@@ -1196,7 +1201,7 @@
     }
     
     .map {
-        padding: 9px 0 54px 0;
+        padding: 9px 0 57px 0;
     }
     
     .map a {
@@ -1211,8 +1216,10 @@
     }
     
     .about {
-        padding-right: 120px;
+        flex: 0 0 50%;
+        padding-right: 100px;
         position: relative;
+        box-sizing: border-box;
     }
     
     .about .btn,
@@ -1221,7 +1228,10 @@
     }
     
     .contacts {
+        flex: 0 0 50%;
         position: relative;
+        box-sizing: border-box;
+        padding-left: 20px;
     }
     
     .about::before,
@@ -1241,7 +1251,7 @@
     }
     
     .courier-services a {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 16px;
         line-height: 40px;
         font-weight: bold;
@@ -1263,7 +1273,7 @@
     
     footer {
         background-color: #464646;
-        font-family: "Open Sans", sans-serif;
+        font-family: "Open Sans", "Arial", sans-serif;
         font-weight: 400;
         font-size: 15px;
         color: #ffffff;
@@ -1290,7 +1300,7 @@
     
     .footer-top .logo {
         text-transform: uppercase;
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 48px;
         line-height: 48px;
         font-weight: bold;
@@ -1331,8 +1341,10 @@
     .footer-top>a::before {
         content: "";
         display: inline-block;
+        vertical-align: top;
         margin-right: 10px;
         background-repeat: no-repeat;
+        margin-top: 12px;
     }
     
     .footer-top .user::before {
@@ -1346,6 +1358,7 @@
         width: 10px;
         height: 10px;
         background-image: url("../img/compare-yellow.svg");
+        margin-top: 14px;
     }
     
     .footer-top .cart::before {
@@ -1421,7 +1434,7 @@
     }
     
     .footer-navigation a {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 18px;
         line-height: 24px;
         font-weight: bold;
@@ -1442,17 +1455,18 @@
         justify-content: space-between;
         -webkit-box-align: center;
         -ms-flex-align: center;
-        align-items: center;
+        align-items: flex-start;
     }
     
     .social-btns {
         margin: 0;
-        padding: 0 52px 0 0;
+        padding: 2px 52px 0 0;
         list-style: none;
     }
     
     .social-btns a {
         display: inline-block;
+        vertical-align: middle;
         width: 32px;
         height: 32px;
         margin: 0 11px;
@@ -1461,7 +1475,7 @@
     .footer-bottom::before {
         content: "";
         position: relative;
-        top: -1px;
+        top: 15px;
         width: 80px;
         height: 7px;
         background-color: #ffc600;
@@ -1508,7 +1522,7 @@
     }
     
     .catalog-page h1 {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 47px;
         line-height: 48px;
         font-weight: bold;
@@ -1517,7 +1531,7 @@
     }
     
     .catalog-page h3 {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 16px;
         line-height: 24px;
         font-weight: bold;
@@ -1649,7 +1663,7 @@
     }
     
     .catalog-filter legend {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 18px;
         line-height: 24px;
         font-weight: bold;
@@ -1716,7 +1730,7 @@
     
     .price-range button::before {
         content: "от 0";
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 14px;
         line-height: 24px;
         font-weight: 400;
@@ -1891,7 +1905,7 @@
     }
     
     .item-card h4 {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 18px;
         line-height: 24px;
         font-weight: bold;
@@ -1902,7 +1916,7 @@
     }
     
     .item-card .price {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 16px;
         line-height: 24px;
         font-weight: 400;
@@ -2005,7 +2019,7 @@
     .goods-cards .new-good::after {
         content: "NEW";
         position: absolute;
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 14px;
         line-height: 24px;
         font-weight: bold;
@@ -2024,7 +2038,7 @@
     }
     
     .pagination {
-        font-family: "Gilroy", sans-serif;
+        font-family: "Gilroy", "Arial", sans-serif;
         font-size: 16px;
         line-height: 24px;
         font-weight: bold;
