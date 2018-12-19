@@ -1938,6 +1938,8 @@
         display: flex;
         z-index: 1;
         outline: none;
+        top: 11px;
+        /*IE*/
     }
     
     .action:hover,
