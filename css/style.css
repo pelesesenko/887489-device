@@ -453,8 +453,7 @@ header {
     opacity: 1;
 }
 
-.search-input:focus~.btn-search,
-.search .btn-search:focus {
+.search-input:focus~.btn-search {
     color: #000000;
     background-color: #f7e296;
     border: 2px solid #000000;
@@ -463,9 +462,11 @@ header {
     z-index: 2;
 }
 
-.search-input:focus~.btn-search:hover {
+.search-input:focus~.btn-search:hover,
+.btn-search:focus {
     color: #ffffff;
     background-color: #000000;
+    border: 2px solid #000000;
 }
 
 .btn-search:active {
@@ -1347,10 +1348,6 @@ footer .footer-top {
     padding-top: 6px;
 }
 
-.footer-top .logo-wrapper {
-    margin: 0 auto 0 0;
-}
-
 .footer-top .logo {
     text-transform: uppercase;
     font-family: "Gilroy", "Arial", sans-serif;
@@ -1358,10 +1355,10 @@ footer .footer-top {
     line-height: 48px;
     font-weight: bold;
     letter-spacing: 0.01em;
-    margin: 0;
+    color: #ffc600;
     position: relative;
     left: -2px;
-    color: #ffc600;
+    margin: 0 auto 0 0;
 }
 
 .footer-top .logo:hover {
@@ -1379,7 +1376,7 @@ header .index-logo:active,
     opacity: 1;
 }
 
-.footer-top>a {
+.footer-top a:not(.logo) {
     color: rgba(255, 255, 255, 0.7);
     margin-left: 41px;
     line-height: 36px;
@@ -1390,13 +1387,11 @@ header .index-logo:active,
     margin-right: 3px;
 }
 
-.footer-top>a::before {
+.footer-top a:not(.logo)::before {
     content: "";
     display: inline-block;
     vertical-align: top;
-    margin-right: 10px;
     background-repeat: no-repeat;
-    margin-top: 12px;
 }
 
 .footer-top .user::before {
@@ -1404,6 +1399,7 @@ header .index-logo:active,
     height: 12px;
     background-image: url("../img/user-yellow.svg");
     margin-right: 13px;
+    margin-top: 12px;
 }
 
 .footer-top .compare::before {
@@ -1411,23 +1407,26 @@ header .index-logo:active,
     height: 10px;
     background-image: url("../img/compare-yellow.svg");
     margin-top: 14px;
+    margin-right: 10px;
 }
 
 .footer-top .cart::before {
     width: 12px;
     height: 12px;
     background-image: url("../img/cart-yellow.svg");
+    margin-right: 10px;
+    margin-top: 12px;
 }
 
-.footer-top>a:hover {
+.footer-top a:not(.logo):hover {
     color: rgba(255, 255, 255, 1);
 }
 
-.footer-top>a:hover::before {
+.footer-top a:not(.logo):hover::before {
     opacity: 0.6;
 }
 
-.footer-top>a:active {
+.footer-top a:not(.logo):active {
     opacity: 0.3;
 }
 
@@ -1436,11 +1435,12 @@ header .index-logo:active,
     height: 12px;
     background-image: url(../img/user-yellow.svg);
     margin-right: 13px;
+    margin-top: 12px;
 }
 
-.footer-top .exit {
+.footer-top a.exit {
     opacity: 0.3;
-    margin-left: 10px;
+    margin-left: 21px;
     margin-right: 3px;
 }
 

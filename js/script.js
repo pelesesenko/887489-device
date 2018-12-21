@@ -109,4 +109,4 @@ goodsCatalog.addEventListener("focus", function() {
 
 catalogMenuAnchors[catalogMenuAnchors.length - 1].addEventListener("blur", function() {
     catalogMenu.style.visibility = "";
-})
+});
