@@ -264,6 +264,7 @@ body {
 .feedback-modal textarea {
     width: 760px;
     margin-bottom: 15px;
+    resize: none;
 }
 
 .feedback-modal .btn {
