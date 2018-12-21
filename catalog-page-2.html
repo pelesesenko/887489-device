@@ -11,15 +11,15 @@
 <body class="catalog-page">
     <header>
         <div class="logo-wrapper">
-            <a class="logo" href="index.html">
+            <a class="logo" href="index.html" tabindex="1">
                 <img src="img/logo.png" width="163" height="36" alt="Логотип Device">
             </a>
         </div>
         <div class="header-top">
             <form class="search" action="#" method="get">
                 <label class="visually-hidden" for="search">Поиск по сайту</label>
-                <input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
-                <button class="btn-search" type="submit" tabindex="-1">Найти</button>
+                <input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту" tabindex="1">
+                <button class="btn-search" type="submit" tabindex="1">Найти</button>
                 <div class="cover"></div>
             </form>
             <a class="fullname" href="#">Валентин Петухов</a>
@@ -78,7 +78,10 @@
                     <form action="#" method="POST">
                         <fieldset class="price-range">
                             <legend>Стоимость</legend>
-                            <button type="button"><img src="img/filter-button.svg" width="20" height="23" alt="Минимальная цена"></button><button type="button"><img src="img/filter-button.svg" width="20" height="23" alt="Максимальная цена"></button>
+                            <button type="button"><img src="img/filter-button.svg" width="20" height="23" alt="Минимальная цена"></button>
+                            <button type="button"><img src="img/filter-button.svg" width="20" height="23" alt="Максимальная цена"></button>
+                            <label aria-label="min-price">от<input type="text" name="min-price" value="0"></label>
+                            <label aria-label="max-price">до<input type="text" name="max-price" value="5000"></label>
                         </fieldset>
                         <fieldset class="color">
                             <legend>Цвет</legend>
@@ -229,6 +232,7 @@
             </div>
         </div>
     </footer>
+    <script src="js/script.mini.js"></script>
 </body>
 
 </html>
